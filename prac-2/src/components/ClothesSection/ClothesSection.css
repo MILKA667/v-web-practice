@@ -1,0 +1,5 @@
+.clothes-section{
+  display: grid;
+  grid-template-columns: repeat(6, 320px);
+  justify-items: center;
+}
