@@ -17,7 +17,7 @@ export default function ClothesBlock(props){
             <img src="./кабуто.jpg" className="clothes_block_img"></img>
             <img onClick={heartIconClickHandle} src='./heart.svg'></img>
             <span>{props.name}</span>
-            <span>{props.price}</span>
+            <span>{props.price} ₽</span>
             <button id={props.id} onClick={clickHandle}>Добавить в корзину</button>
         </div>
     )

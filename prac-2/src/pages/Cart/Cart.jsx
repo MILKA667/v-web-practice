@@ -1,7 +1,7 @@
 import { useContext} from 'react';
 import {CartContext} from './../../contexts/CartContext'
 import CartBlock from '../../components/CartBlock/CartBlock'
-
+import './Cart.css'
 function Cart(){
   const {items,clearCart} = useContext(CartContext)
 
@@ -10,6 +10,7 @@ function Cart(){
   }
   return(
     <div>
+      <div className='cartSection'>
       {items.map((item, index) => (
         <CartBlock 
           key={index}
@@ -18,7 +19,8 @@ function Cart(){
           id={item.id}
         />
         ))}
-        <button onClick={clickHandle}>Очистить корзину</button>
+    </div>
+    <button onClick={clickHandle}>Очистить корзину</button>
     </div>
   )
 }

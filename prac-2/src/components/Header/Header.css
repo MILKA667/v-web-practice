@@ -3,11 +3,12 @@ header{
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #bcaeae;
+  background-color: #8b8e8d;;
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.5);
-  height: 50px;
+  height: 60px;
   align-content: center;
   border-radius: 10px;
+  z-index: 100;
 }
 nav ul {
   display: flex;
